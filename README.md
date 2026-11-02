@@ -16,7 +16,7 @@ GsCore 插件：监控 Codex 使用限额的**重置公告、概率预测、服�
 ## 环境要求
 
 - Python >= 3.11
-- GsCore >= 0.11.x（推荐）
+- GsCore 上游 `0.11.x`（主目标），或 `AthenaHibou/gsuid_core` 的 `main`（基于 `0.10.7` + 定制补丁）
 - AI Core 可选；开启后可获得 AI 摘要、时机推断和自然语言工具调用
 
 ## 安装
@@ -83,7 +83,9 @@ git clone https://github.com/AthenaHibou/CodexReset
 
 ## 兼容性
 
-- 以 GsCore `0.11.x` 为主要支持基线。
+- **主目标**：上游 `Genshin-bots/gsuid_core` 的 `master`，当前为 `0.11.2`。
+- **Fork 目标**：`AthenaHibou/gsuid_core` 的 `main`，基于 `0.10.7` + 定制补丁；AI Core 行为可能与上游不同。
+- 代码按上游 `0.11.2` 的 API 编写；导入与关键符号已做过静态对照，实际运行仍取决于 AI Core 配置和模型状态。
 - 使用了 `ai_tools`、`ai_entity`、`ai_alias`、`to_ai`、`create_agent` 等 AI Core 能力；旧核心缺少部分能力时会走降级路径。
 - 使用了 `GsListConfig` 配置项与 `gs_subscribe` 订阅系统；核心接口有破坏性变更时需要同步适配。
 
