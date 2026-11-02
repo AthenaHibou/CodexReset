@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.idea/
+.vscode/
+data/
+*.log
+*.7z
+*.zip
+*.bak
+config.json

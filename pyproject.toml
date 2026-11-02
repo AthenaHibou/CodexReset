@@ -1,0 +1,18 @@
+[project]
+name = "CodexReset"
+version = "1.0.0"
+description = "GsCore 插件：Codex 限额重置提醒、概率预测与历史查询（数据源：codex-reset.com）"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "GPL-3.0-or-later" }
+authors = [{ name = "AthenaHibou" }]
+
+dependencies = [
+    "httpx>=0.24.0",
+    "pydantic>=2.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/AthenaHibou/CodexReset"
+Repository = "https://github.com/AthenaHibou/CodexReset"
+Issues = "https://github.com/AthenaHibou/CodexReset/issues"
